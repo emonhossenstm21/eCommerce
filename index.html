@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css file link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/css/uikit.min.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Css file link -->
+    <title>Ecommerce Website</title>
+</head>
+
+<body>
+
+    <!-- Header section start here -->
+    <header>
+        <div class="main-navbar shadow-sm sticky-top">
+            <div class="top-navbar">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                            <h5 class="brand-name fs-2">e<span>Bax</span></h5>
+                        </div>
+                        <div class="col-md-2 m-auto my-auto d-none d-sm-none d-md-block d-lg-block location-deliver justify-content-end">
+                            <h4><i class="fa-solid fa-location-dot"></i> Deliver to <br> <span>Rangpur City</span></h4>
+                        </div>
+                        <div class="col-md-5 col-sm-8 my-auto">
+                            <form role="search">
+                                <div class="input-group">
+                                    <input type="search" placeholder="Search your product" class="form-control" />
+                                    <button class="btn bg-white" type="submit">
+                                        <i class="fa fa-camera-alt"></i>
+                                    </button>
+                                    <button class="btn bg-warning" type="submit">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3 col-sm-4 my-auto">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item sing-btn">
+                                    <a class="nav-link" href="pages/signin.html">
+                                        <i class="fa-solid fa-user"></i> Sign In
+                                    </a>
+                                </li>
+                                <!--
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-user"></i> Username
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-decoration-none" href="#"><i
+                                                    class="fa fa-user"></i> Profile</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#"><i
+                                                    class="fa fa-list"></i> My Orders</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#"><i
+                                                    class="fa fa-heart"></i> My Wishlist</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#"><i
+                                                    class="fa fa-shopping-cart"></i> My Cart</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#"><i
+                                                    class="fa fa-sign-out"></i> Logout</a></li>
+                                    </ul>
+                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg second-navbar">
+                <div class="container">
+                    <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+                        eBax
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">All Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">New Arrivals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Featured Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Electronics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fashions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Accessories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Appliances</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero section start here -->
+    <section>
+        <div class="container-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="hero-heading">
+                            <h1>GRAB THIS <br><span>VALENTINE’S DEALS!</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-1.png" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Men’s Fashion</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-2.png" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Women’s Fashion</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-3.png" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Accessories</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-4.jpg" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Electronics</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-5.png" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Fitness & Health</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-6.png" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Beauty Picks</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-7.png" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">Valentine’s Deals</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="images/hero-product-8.jpg" class="card-img-top" alt="product">
+                            <div class="card-body">
+                                <h5 class="card-heading">MakeUp</h5>
+                                <div class="hero-btn">
+                                    <a href="#" class="btn btn-explore">Explore Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--categories section start here -->
+    <section>
+        <div class="container-categories">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <h4 class="mb-4 fs-3">Our Categories</h4>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card">
+                            <a href="#">
+                                <div class="category-card-img">
+                                    <img src="images/headphones.jpg" class="w-100" alt="headphones">
+                                </div>
+                                <div class="category-card-body">
+                                    <h5>Headphones</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card">
+                            <a href="#">
+                                <div class="category-card-img">
+                                    <img src="images/shoes.jpg" class="w-100" alt="shoes">
+                                </div>
+                                <div class="category-card-body">
+                                    <h5>Men's Shoes</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card">
+                            <a href="">
+                                <div class="category-card-img">
+                                    <img src="images/phone-cover.jpg" class="w-100" alt="phone-cover">
+                                </div>
+                                <div class="category-card-body">
+                                    <h5>Phone Cover</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="category-card">
+                            <a href="">
+                                <div class="category-card-img">
+                                    <img src="images/shirts.jpg" class="w-100" alt="shirts">
+                                </div>
+                                <div class="category-card-body">
+                                    <h5>Men's shirts</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Week Product section start here -->
+    <section>
+        <div class="container-weekly-product">
+            <div class="container">
+                <div id="carouselExample" class="carousel slide">
+                    <h4 class="fs-3">Most Selling Products In This Week!</h4>
+                    <div class="carousel-inner p-3">
+                        <div class=" carousel-item active">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/iphone.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>iPhone 14 Pro Max 256 GB </h5>
+                                            <span>5k+ Sales</span>
+                                            <p>4.8 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>899$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/sanmsung.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Samsung Galaxy S23 12/256 GB</h5>
+                                            <span>10k+ Sales</span>
+                                            <p>4.4 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>599$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/core.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Intel Core i5 11Gen Processor </h5>
+                                            <span>12k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/laptop.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>HP Laptop 32GB, 1TB and 7gen </h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.9 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>799$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/bag.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Brown Bag </h5>
+                                            <span>3k+ Sales</span>
+                                            <p>4.2 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>79$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Nikon D7000</h5>
+                                            <span>2k+ Sales</span>
+                                            <p>4.3 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>1199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/grey-camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Grey and Black Camera</h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>729$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/rubik.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Rubik's Cube </h5>
+                                            <span>13k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>09$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/iphone.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>iPhone 14 Pro Max 256 GB </h5>
+                                            <span>5k+ Sales</span>
+                                            <p>4.8 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>899$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/sanmsung.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Samsung Galaxy S23 12/256 GB</h5>
+                                            <span>10k+ Sales</span>
+                                            <p>4.4 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>599$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/core.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Intel Core i5 11Gen Processor </h5>
+                                            <span>12k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/laptop.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>HP Laptop 32GB, 1TB and 7gen </h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.9 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>799$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/bag.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Brown Bag </h5>
+                                            <span>3k+ Sales</span>
+                                            <p>4.2 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>79$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Nikon D7000</h5>
+                                            <span>2k+ Sales</span>
+                                            <p>4.3 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>1199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/grey-camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Grey and Black Camera</h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>729$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/rubik.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Rubik's Cube </h5>
+                                            <span>13k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>09$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/iphone.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>iPhone 14 Pro Max 256 GB </h5>
+                                            <span>5k+ Sales</span>
+                                            <p>4.8 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>899$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/sanmsung.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Samsung Galaxy S23 12/256 GB</h5>
+                                            <span>10k+ Sales</span>
+                                            <p>4.4 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>599$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/core.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Intel Core i5 11Gen Processor </h5>
+                                            <span>12k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/laptop.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>HP Laptop 32GB, 1TB and 7gen </h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.9 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>799$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/bag.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Brown Bag </h5>
+                                            <span>3k+ Sales</span>
+                                            <p>4.2 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>79$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Nikon D7000</h5>
+                                            <span>2k+ Sales</span>
+                                            <p>4.3 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>1199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/grey-camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Grey and Black Camera</h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>729$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/rubik.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Rubik's Cube </h5>
+                                            <span>13k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>09$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--daily Product section start here -->
+    <section>
+        <div class="container-weekly-product">
+            <div class="container">
+                <div id="carouselExample" class="carousel slide">
+                    <h4 class="fs-3">Daily Deals!</h4>
+                    <div class="carousel-inner p-3">
+                        <div class=" carousel-item active">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/bag.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Brown Bag </h5>
+                                            <span>3k+ Sales</span>
+                                            <p>4.2 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>79$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Nikon D7000</h5>
+                                            <span>2k+ Sales</span>
+                                            <p>4.3 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>1199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/grey-camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Grey and Black Camera</h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>729$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/rubik.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Rubik's Cube </h5>
+                                            <span>13k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>09$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/sanmsung.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Samsung Galaxy S23 12/256 GB</h5>
+                                            <span>10k+ Sales</span>
+                                            <p>4.4 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>599$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/laptop.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>HP Laptop 32GB, 1TB and 7gen </h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.9 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>799$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Nikon D7000</h5>
+                                            <span>2k+ Sales</span>
+                                            <p>4.3 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>1199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/rubik.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Rubik's Cube </h5>
+                                            <span>13k+ Sales</span>
+                                            <p>5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>09$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-item">
+                            <div class="row g-3">
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/iphone.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>iPhone 14 Pro Max 256 GB </h5>
+                                            <span>5k+ Sales</span>
+                                            <p>4.8 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>899$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/bag.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Brown Bag </h5>
+                                            <span>3k+ Sales</span>
+                                            <p>4.2 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>79$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Nikon D7000</h5>
+                                            <span>2k+ Sales</span>
+                                            <p>4.3 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>1199$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="carousel-card">
+                                        <div class="carousel-card-img">
+                                            <img src="images/grey-camera.png" alt="phone">
+                                        </div>
+                                        <div class="carousel-card-content">
+                                            <h5>Grey and Black Camera</h5>
+                                            <span>53k+ Sales</span>
+                                            <p>4.5 ⭐⭐⭐⭐</p>
+                                            <div class="price-buy">
+                                                <p>729$</p>
+                                                <a href="#" class="buy-now">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--explore ideas section start here -->
+    <section>
+        <div class="container-explore-ideas">
+            <div class="container">
+                <div class="inner-container-ideas">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 p-5">
+                            <h2>Explore ideas to <br> <span> make your space</span></h2>
+                            <a href="#">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer section start here -->
+    <footer>
+        <div class="container-footer">
+            <div class="container-fluid">
+                <div class="row g-2">
+                    <div class="col-lg-2 col-md-2 col-sm-6">
+                        <h3>Buy</h3>
+                        <div class="footer-link">
+                            <a href="#">Registration</a>
+                            <a href="#">Money Back Guarantee</a>
+                            <a href="#">Buying Products</a>
+                            <a href="#">Stores</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6">
+                        <h3>Sell</h3>
+                        <div class="footer-link">
+                            <a href="#">Start Selling</a>
+                            <a href="#">Learn to Sell</a>
+                            <a href="#">Affiliates</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6">
+                        <h3>About Ebax</h3>
+                        <div class="footer-link">
+                            <a href="#">Company Info</a>
+                            <a href="#">News</a>
+                            <a href="#">Investors</a>
+                            <a href="#">Careers</a>
+                            <a href="#">License</a>
+                            <a href="#">Advertise with us</a>
+                            <a href="#">Policies</a>
+                            <a href="#">Copyrights</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6">
+                        <h3>Stay Connected</h3>
+                        <div class="footer-link">
+                            <a href="#">Blog</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">LInkedIn</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Community</h3>
+                                <div class="footer-link">
+                                    <a href="#">Announcements</a>
+                                    <a href="#">Discussion Boards</a>
+                                    <a href="#">Ebax Giving Works</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Support</h3>
+                                <div class="footer-link">
+                                    <a href="#">Seller Information Center</a>
+                                    <a href="#">Contact Us</a>
+                                </div>
+                            </div>
+                            <div class="newsletter">
+                                <div class="input-group">
+                                    <input type="email" placeholder="Send us your mail to know update" class="form-control" />
+                                    <button class="btn bg-warning" type="submit">
+                                        <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>© 2023. All rights reserved by Anas Hossain Emon.</p>
+            </div>
+        </div>
+    </footer>
+    <!--
+    <section>
+        <div class="container-week-product">
+            <div class="container">
+                <div class="multi-carousel" data-mdb-interval="3000" data-mdb-items="5">
+                    <div class="d-flex justify-content-center m-2 mb-3">
+                        <button class="carousel-control-prev btn btn-pink btn-floating mx-3" type="button" tabindex="0"
+                            data-mdb-slide="prev">
+                            <i class="fas fa-angle-left fa-lg"></i>
+                        </button>
+                        <button class="carousel-control-next btn btn-pink btn-floating mx-3" type="button" tabindex="0"
+                            data-mdb-slide="next">
+                            <i class="fas fa-angle-right fa-lg"></i>
+                        </button>
+                    </div>
+                    <div class="multi-carousel-inner">
+                        <div class="row g-3">
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(4).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Moda</h5>
+                                            <p class="card-text">Plan B</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star-half-alt"></i>
+                                                </li>
+                                            </ul>
+                                            <p class="price mb-0">9,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(1).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Indie City</h5>
+                                            <p class="card-text">Pixies</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <p class="price mb-0">14,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(7).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Year</h5>
+                                            <p class="card-text">Indielectru</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <p class="price mb-0">12,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(8).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">L'Hiver Indien</h5>
+                                            <p class="card-text">Baloji</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star-half-alt"></i>
+                                                </li>
+                                            </ul>
+                                            <p class="price mb-0">10,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(6).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Indie Funk</h5>
+                                            <p class="card-text">Generation Funk</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <p class="price mb-0">19,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(2).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Rockferry</h5>
+                                            <p class="card-text">Duffy</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star-half-alt"></i>
+                                                </li>
+                                            </ul>
+                                            <p class="price mb-0">17,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(3).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Indie Pop</h5>
+                                            <p class="card-text">Various artists</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="far fa-star"></i></li>
+                                            </ul>
+                                            <p class="price mb-0">9,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(5).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">Rock 'N' Roll</h5>
+                                            <p class="card-text">Chuck Berry</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star-half-alt"></i>
+                                                </li>
+                                            </ul>
+                                            <p class="price mb-0">29,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="multi-carousel-item">
+                                    <div class="card m-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Square/img(9).jpg"
+                                            alt="Card image cap" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">High Voltage</h5>
+                                            <p class="card-text">AC/DC</p>
+                                            <ul class="list-unstyled list-inline my-2">
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                                <li class="list-inline-item mx-0"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <p class="price mb-0">24,99 $</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- javaScript bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit-icons.min.js"></script>
+    <!--javaScript file link-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
